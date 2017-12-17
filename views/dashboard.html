@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-6">
+            <i class="fa fa-align-justify"></i>
+            <span>
+              <b>PROJECTS</b>
+            </span>
+          </div>
+          <div class="col-lg-6 text-right">
+            <span>
+              <b>
+                <a href="#!createproject">
+                  <i class="fa fa-plus" aria-hidden="true"></i>CREATE PROJECT</a>
+              </b>
+            </span>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card-body mycontainer">
+
+        <div class="beforeProjects" ng-if="NoOfProjects">
+          THERE ARE NO PROJECTS YET
+        </div>
+        <table class="table" ng-if="!NoOfProjects">
+          <thead>
+            <tr>
+              <th>SN</th>
+              <th>Project Title</th>
+              <th>Summary/Abstract</th>
+              <th>Last Modified</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="project in projects">
+              <td>{{$index+1}}</td>
+              <td>{{project.projectTitle}}</td>
+              <td>{{project.summary}}</td>
+              <td>{{project.lastModified}}</td>
+              <td>
+                <button ng-click="rowSelected(project.projectTitle)" class="dashbtn">view</a>
+                </button>
+
+              </td>
+              <td>
+                <button ng-click="editValue(project.projectTitle)" class="dashbtn">Edit</button>
+
+              </td>
+              <td>
+                <button ng-click="deleteValue(project.projectTitle)" class="dashbtn">Delete</a>
+                </button>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

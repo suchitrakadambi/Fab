@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="file.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="//www.legalfab.com/wp-content/uploads/2016/07/LegalFAB-Final-Logo-pathed-1.jpg">
+    </header>
+    <div ng-view></div>
+    <footer>
+        <a href="http://facebook.com/legalfabdotcom" <i class="fa fa-facebook-official" aria-hidden="true" target="blank">
+            </i>
+        </a>
+        <a href="http://instagram.com/legalfabdotcom" <i class="fa fa-instagram" aria-hidden="true" target="blank">
+            </i>
+        </a>
+        <a href="http://twitter.com/legalfabdotcom" <i class="fa fa-twitter-square" aria-hidden="true" target="blank">
+            </i>
+        </a>
+        <div>© LEGALFAB PRIVATE LIMITED. ALL RIGHTS RESERVED.</div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="./app.js"></script>
+    <script src="./controllers/loginController.js"></script>
+    <script src="./controllers/registerController.js"></script>
+    <script src="./controllers/dashboardController.js"></script>
+    <script src="./controllers/createProjectController.js"></script>
+    <script src="./controllers/viewController.js"></script>
+    <script src="./controllers/editController.js"></script>
+    <script src="./services/homepageservice.js"></script>
+    <script src="./config.js"></script>
+</body>
+
+</html>

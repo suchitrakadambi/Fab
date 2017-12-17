@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header">
+        <strong>Basic Form</strong> Elements
+      </div>
+      <div class="card-body">
+        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="select">Select IP Type</label>
+            <div class="col-md-9">
+              <select id="select" name="select" class="form-control" size="1" ng-model="myIp.name.type" ng-options="state as state.type for state in ipType">
+
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">IP Reference Number</label>
+            <div class="col-md-9">
+              <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Text" ng-model="myIp.referenceNumber"
+                ng-value="myIp.referenceNumber">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Owner</label>
+            <div class="col-md-9">
+              <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Text" ng-model="myIp.owner" ng-value="myIp.owner">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Name Of Inventor</label>
+            <div class="col-md-9">
+              <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Text" ng-model="myIp.nameOfInventor"
+                ng-value="myIp.nameOfInventor">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Project Titile</label>
+            <div class="col-md-9">
+              <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Text" ng-model="myIp.projectTitle"
+                ng-value="myIp.projectTitle" ng-disabled="disable">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="textarea-input">Summary/abstract</label>
+            <div class="col-md-9">
+              <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Content.." ng-model="myIp.summary"
+                ng-value="myIp.summary"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <button type="submit" class="btn btn-sm btn-primary" ng-click=s ave(Ip)> Submit</button>
+        <button type="reset" class="btn btn-sm btn-warning" ng-click=b ack()>Back</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>

@@ -1,0 +1,35 @@
+<div class="flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mx-4">
+          <div class="card-body p-4">
+            <h1>Register</h1>
+            <p class="text-muted">Create your account</p>
+            <div class="input-group mb-3">
+              <span class="input-group-addon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+              <input type="text" class="form-control" placeholder="Username" ng-model="userinfo.userName" required>
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-addon">@</span>
+              <input type="email" class="form-control" placeholder="Email" ng-model="userinfo.userEmail" required>
+              <span ng-show={ {EmailVal}} ng-class="{error:EmailVal}"> Provided Email already exists</span>
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-addon">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </span>
+              <input type="password" class="form-control" placeholder="Password" ng-model="userinfo.userPwd" required>
+            </div>
+
+            <button type="button" class="btn btn-block btn-primary" ng-click=r egister(userinfo)>Create Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

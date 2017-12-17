@@ -1,0 +1,56 @@
+body{
+    height: 100%;
+    width: 100vw;
+}
+header{
+margin: auto;
+width:100%;
+text-align: center;
+}
+.mycontainer{
+    height:40vw;
+}
+footer{
+    margin: auto;
+    width:100%;
+    text-align: center;
+    position: absolute; 
+}
+footer >a{
+    background: RGB(3,39,101);
+    color:white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+footer >a:hover{
+    color: white;
+}
+.beforeProjects{
+    background: black;
+    color :white;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+    height: 20vw;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding-top: 7%;
+}
+tbody >tr:hover{
+background-color:RGB(32,168,216); 
+color:white;
+}
+tbody >tr{
+    cursor: pointer;
+}
+.dashbtn{
+    /* border-radius: 20px; */
+    background: black;
+    color:white;
+    border: none;
+}
+.error{
+    color:red;
+}
